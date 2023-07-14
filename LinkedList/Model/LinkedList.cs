@@ -14,7 +14,6 @@
         }
         public LinkedList(T data)
         {
-            Item<T> item = new Item<T>(data);
             SetHeadAndTail(data);
         }
 
