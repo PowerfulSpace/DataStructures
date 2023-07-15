@@ -69,39 +69,25 @@ namespace LinkedList.Model
 
         public void InsertAfter(T target, T data)
         {
-            if (Head != null)
+            if(Head != null)
             {
-                Item<T> item = new Item<T>(data);
-
-                if (Count == 1)
-                {
-                    item.Next = Head;
-                    Head = item;
-                    Count++;
-                }
-
-                Item<T> previous = Head;
-                Item<T> current = Head.Next;
-
+                var current = Head;
 
                 while (current != null)
                 {
-                    if (previous.Data.Equals(target))
+                    if (current.Data!.Equals(target))
                     {
-                        previous.Next = item;
-                        item.Next = current;
-
+                        var item = new Item<T>(data);
+                        item.Next = current.Next;
+                        current.Next = item;
                         Count++;
                         return;
                     }
-                    previous = current;
-                    current = current.Next;
+                    else
+                    {
+                        current = current.Next;
+                    }
                 }
-            }
-            else
-            {
-                SetHeadAndTail(data);
-                return;
             }
         }
 

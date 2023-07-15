@@ -28,7 +28,7 @@ list.Delete(7);
 
 list.AppendHead(55);
 
-list.InsertAfter(55, 10);
+list.InsertAfter(1, 10);
 
 
 foreach (var item in list)
