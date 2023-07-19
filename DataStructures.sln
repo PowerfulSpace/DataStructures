@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0.1 LinkedList", "LinkedList\0.1 LinkedList.csproj", "{C0CEE67B-F97C-433D-8CB7-6CDCE9DF4AD1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStack", "MyStack\MyStack.csproj", "{7E551EF7-6958-49F9-B1A1-E24586AC65FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C0CEE67B-F97C-433D-8CB7-6CDCE9DF4AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0CEE67B-F97C-433D-8CB7-6CDCE9DF4AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0CEE67B-F97C-433D-8CB7-6CDCE9DF4AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E551EF7-6958-49F9-B1A1-E24586AC65FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E551EF7-6958-49F9-B1A1-E24586AC65FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E551EF7-6958-49F9-B1A1-E24586AC65FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E551EF7-6958-49F9-B1A1-E24586AC65FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
