@@ -5,6 +5,7 @@
         T[] items;
         public int Capasity => items.Length;
         private int current = 0;
+        public int Current => current;
         public ArrayStack(int size = 10)
         {
             items= new T[size];
@@ -47,6 +48,11 @@
             }
             else
                 throw new NullReferenceException("стек пуст");
+        }
+
+        public override string ToString()
+        {
+            return $"Стек содержит: {current} элементов";
         }
     }
 }

@@ -36,8 +36,6 @@ arrayStack.Push(1);
 arrayStack.Push(2);
 
 arrayStack.Peek();
-arrayStack.Peek();
-arrayStack.Peek();
 
 arrayStack.Pop();
 arrayStack.Pop();
