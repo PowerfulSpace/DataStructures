@@ -1,6 +1,8 @@
-﻿namespace DoublyLinkedList.Model
+﻿using System.Collections;
+
+namespace DoublyLinkedList.Model
 {
-    public class MyLinkedList<T>
+    public class MyLinkedList<T> : IEnumerable<T>
     {
         public Item<T> Head { get; set; }
         public Item<T> Tail { get; set; }
@@ -72,7 +74,20 @@
                     current = current.Next;
                 }
             }
-            
+        }
+
+        public MyLinkedList<T> Reverse()
+        {
+            MyLinkedList<T> links = new MyLinkedList<T>();
+            var current = Tail;
+
+            while (current != null)
+            {
+                links.Add(current.Data);
+                current = current.Previous;
+            }
+
+            return links;
         }
 
         private void SetHeadAndTail(T data)
@@ -82,6 +97,22 @@
             Tail = item;
             Count = 1;
         }
+
+        public IEnumerator GetEnumerator()
+        {
+            var current = Head;
+            while (current != null)
+            {
+                yield return current.Data;
+                current = current.Next;
+            }
+        }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            return (IEnumerator<T>)GetEnumerator();
+        }
+
 
         public override string ToString()
         {
